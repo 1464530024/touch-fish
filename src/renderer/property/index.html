@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>属性</title>
+  <link rel="stylesheet" href="property.css" />
+</head>
+<body>
+  <div id="titlebar">
+    <div class="tb-left">
+      <img id="siteIcon" class="tb-icon" alt="" />
+      <span id="siteName" class="tb-title">网站</span>
+      <span class="tb-sub">属性</span>
+    </div>
+    <div class="tb-controls">
+      <button id="btnMin" class="winbtn"><svg viewBox="0 0 10 10"><path d="M0 5h10"/></svg></button>
+      <button id="btnMax" class="winbtn"><svg viewBox="0 0 10 10"><rect x="0.5" y="0.5" width="9" height="9"/></svg></button>
+      <button id="btnClose" class="winbtn close"><svg viewBox="0 0 10 10"><path d="M0 0l10 10M10 0L0 10"/></svg></button>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <button class="nav-btn" id="btnBack" title="后退">‹</button>
+    <button class="nav-btn" id="btnForward" title="前进">›</button>
+    <button class="nav-btn" id="btnReload" title="刷新">⟳</button>
+    <div class="address" id="address">about:blank</div>
+    <button class="tb-action" id="btnExternal">在浏览器中打开</button>
+    <button class="tb-action" id="btnHome">回到首页</button>
+  </div>
+
+  <div class="loadbar"><i id="loadFill"></i></div>
+
+  <div class="viewport">
+    <webview id="view" src="about:blank" allowpopups partition="persist:touchfish"></webview>
+    <div class="fallback hidden" id="fallback">
+      <div class="fb-card">
+        <div class="fb-title">这个站点不允许被内嵌</div>
+        <div class="fb-desc">部分网站（例如带严格安全策略的视频站）会拒绝在应用内打开。<br />你可以直接使用系统浏览器访问。</div>
+        <button class="fb-btn" id="fbOpen">用浏览器打开</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="property.js"></script>
+</body>
+</html>

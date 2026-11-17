@@ -1,0 +1,101 @@
+{
+  "name": "touch-fish",
+  "productName": "touch fish",
+  "version": "1.1.0",
+  "description": "touch fish - 摸鱼专用 Windows 伪装桌面（虚拟 Win10 桌面 + 台球小游戏）",
+  "main": "src/main/main.js",
+  "author": "touch fish contributors",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1464530024/touch-fish.git"
+  },
+  "homepage": "https://github.com/1464530024/touch-fish#readme",
+  "bugs": {
+    "url": "https://github.com/1464530024/touch-fish/issues"
+  },
+  "keywords": [
+    "electron",
+    "windows-desktop",
+    "boss-key",
+    "fake-desktop",
+    "privacy-screen",
+    "windows10",
+    "desktop-pet"
+  ],
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "icons": "electron tools/render-icons.js",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder --win nsis --x64",
+    "icons:shell": "python tools/extract-icons.py shell"
+  },
+  "dependencies": {
+    "uiohook-napi": "^1.5.4"
+  },
+  "devDependencies": {
+    "electron": "33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.touchfish.desktop",
+    "productName": "touch fish",
+    "asar": true,
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "electronLanguages": [
+      "zh-CN",
+      "en-US"
+    ],
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json",
+      "!**/*.map",
+      "!assets/icons/sheets/**",
+      "!node_modules/uiohook-napi/prebuilds/darwin-*/**",
+      "!node_modules/uiohook-napi/prebuilds/linux-*/**",
+      "!node_modules/uiohook-napi/prebuilds/win32-arm64/**",
+      "!node_modules/uiohook-napi/libuiohook/**",
+      "!node_modules/uiohook-napi/src/**"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "touch-fish-${version}-setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "touch fish",
+      "menuCategory": false,
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "runAfterFinish": true,
+      "artifactName": "touch-fish-${version}-setup.${ext}"
+    },
+    "electronDist": "node_modules/electron/dist",
+    "npmRebuild": false,
+    "asarUnpack": [
+      "**/*.node",
+      "node_modules/uiohook-napi/**"
+    ]
+  }
+}

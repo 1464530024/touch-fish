@@ -1,0 +1,18 @@
+# 依赖与打包产物
+node_modules/
+dist/
+
+# 日志与自检临时文件
+*.log
+smoke-*.png
+e2e-*.png
+measure-desktop.png
+probe.json
+
+# 原始截图（体积大，仓库内用 docs/images 下的压缩版）
+screenshots/
+
+# 图标索引图（仅提取时临时生成）
+assets/icons/sheets/
+
+*.tmp

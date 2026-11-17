@@ -1,0 +1,14 @@
+# 换行与二进制文件约定
+* text=auto eol=lf
+
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.exe  binary
+*.woff binary
+*.woff2 binary
+
+# 避免 GitHub 把生成物当作文本 diff
+dist/**     linguist-generated=true
+package-lock.json linguist-generated=true
