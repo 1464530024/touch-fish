@@ -25,26 +25,26 @@
 ## 📸 预览
 
 <div align="center">
-  <img src="docs/images/01-desktop.png" alt="虚拟 Windows 10 桌面" width="100%" />
+  <img src="docs/images/01-desktop.jpg" alt="虚拟 Windows 10 桌面" width="100%" />
   <sub>连按两次 Ctrl —— 官方 Hero 壁纸 + 真实系统图标，和真机桌面几乎无差</sub>
 </div>
 
 <table>
   <tr>
-    <td width="50%"><img src="docs/images/03-start-menu.png" alt="开始菜单" /><br /><sub>开始菜单：应用列表 + 磁贴 + 电源区</sub></td>
-    <td width="50%"><img src="docs/images/02-context-menu.png" alt="右键菜单" /><br /><sub>Win10 风格右键菜单与二级子菜单</sub></td>
+    <td width="50%"><img src="docs/images/03-start-menu.jpg" alt="开始菜单" /><br /><sub>开始菜单：应用列表 + 磁贴 + 电源区</sub></td>
+    <td width="50%"><img src="docs/images/02-context-menu.jpg" alt="右键菜单" /><br /><sub>Win10 风格右键菜单与二级子菜单</sub></td>
   </tr>
   <tr>
-    <td><img src="docs/images/04-this-pc-window.png" alt="此电脑窗口" /><br /><sub>窗口系统：标题栏 / 地址栏 / 任务栏联动</sub></td>
-    <td><img src="docs/images/05-pool-mode.png" alt="台球模式" /><br /><sub>台球模式：白球、彩球、桌面正中的球洞</sub></td>
+    <td><img src="docs/images/04-this-pc-window.jpg" alt="此电脑窗口" /><br /><sub>窗口系统：标题栏 / 地址栏 / 任务栏联动</sub></td>
+    <td><img src="docs/images/05-pool-mode.jpg" alt="台球模式" /><br /><sub>台球模式：白球、彩球、桌面正中的球洞</sub></td>
   </tr>
   <tr>
-    <td><img src="docs/images/06-busy-mode.png" alt="忙碌模式" /><br /><sub>忙碌模式：Word / 剪辑 / PS / 代码四分屏</sub></td>
-    <td><img src="docs/images/07-builtin-browser.png" alt="内置浏览器" /><br /><sub>右键「属性」→ 内置浏览器（可拖拽缩放）</sub></td>
+    <td><img src="docs/images/06-busy-mode.jpg" alt="忙碌模式" /><br /><sub>忙碌模式：Word / 剪辑 / PS / 代码四分屏</sub></td>
+    <td><img src="docs/images/07-builtin-browser.jpg" alt="内置浏览器" /><br /><sub>右键「属性」→ 内置浏览器（可拖拽缩放）</sub></td>
   </tr>
   <tr>
-    <td><img src="docs/images/08-settings-wallpaper.png" alt="设置 - 个性化" /><br /><sub>自定义壁纸：预览、换图、一键还原</sub></td>
-    <td><img src="docs/images/09-settings-icons.png" alt="设置 - 图标库" /><br /><sub>图标库：主程序与每个桌面图标都能换</sub></td>
+    <td><img src="docs/images/08-settings-wallpaper.jpg" alt="设置 - 个性化" /><br /><sub>自定义壁纸：预览、换图、一键还原</sub></td>
+    <td><img src="docs/images/09-settings-icons.jpg" alt="设置 - 图标库" /><br /><sub>图标库：主程序与每个桌面图标都能换</sub></td>
   </tr>
 </table>
 
