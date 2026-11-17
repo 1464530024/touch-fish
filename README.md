@@ -201,7 +201,7 @@ npm run build
 ```
 
 国内网络环境打包常踩的三个坑（镜像、`NODE_OPTIONS`、winCodeSign 符号链接）已在
-[技术文档 · 打包](docs/TECHNICAL.md#七打包与踩坑记录) 里给出完整解法。
+[技术文档 · 打包](docs/TECHNICAL.md#十一打包与踩坑记录) 里给出完整解法。
 
 ---
 
